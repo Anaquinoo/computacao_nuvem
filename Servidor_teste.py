@@ -1,6 +1,6 @@
-import Servidor_teste
+import unittest
 
-class TestStringMethods(Servidor_teste.TestCase):
+class TestStringMethods(unittest.TestCase):
 
     def test_upper(self):
         self.assertEqual('foo'.upper(), 'FOO')
@@ -17,4 +17,4 @@ class TestStringMethods(Servidor_teste.TestCase):
             s.split(2)
 
 if __name__ == '__main__':
-    Servidor_teste.main()
+    unittest.main()
